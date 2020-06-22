@@ -44,6 +44,7 @@
     "publish:local": "yarn publish:prepare; yarn publish dist/core --registry http://localhost:4873; yarn publish dist/clr-ui --registry http://localhost:4873; yarn publish dist/clr-angular --registry http://localhost:4873; yarn publish dist/clr-icons --registry http://localhost:4873",
     "website:start": "yarn --cwd apps/website start",
     "website:build": "yarn --cwd apps/website build",
+    "website:deploy": "scripts/website.sh",
     "angular:build": "yarn --cwd packages/angular run build",
     "angular:test": "yarn --cwd packages/angular run test",
     "angular:test:watch": "yarn --cwd packages/angular run test:watch",
