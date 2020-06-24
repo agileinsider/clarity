@@ -65,7 +65,8 @@
     "core:test": "yarn --cwd packages/core run test",
     "core:test:watch": "yarn --cwd packages/core run test:watch",
     "core:lint": "yarn --cwd packages/core run lint",
-    "core:dev:build": "yarn --cwd packages/core run dev:build"
+    "core:dev:build": "yarn --cwd packages/core run dev:build",
+    "website:build": "yarn --cwd packages/angular run build-storybook; yarn --cwd apps/website run build"
   },
   "devDependencies": {
     "@commitlint/cli": "8.0.0",
