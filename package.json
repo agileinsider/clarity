@@ -45,6 +45,7 @@
     "website:start": "yarn --cwd apps/website start",
     "website:build": "yarn --cwd apps/website build; yarn --cwd packages/angular run build-storybook; yarn --cwd packages/core dev:build",
     "website:deploy": "scripts/website.sh",
+    "website:preview": "lite-server --baseDir=dist/website",
     "angular:build": "yarn --cwd packages/angular run build",
     "angular:test": "yarn --cwd packages/angular run test",
     "angular:test:watch": "yarn --cwd packages/angular run test:watch",
